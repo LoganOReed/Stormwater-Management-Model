@@ -3,6 +3,20 @@ ORD Stormwater-Management-Model Solver
 
 Stormwater Management Model (aka "SWMM") solver only
 
+## Manual
+[SWMM Manual](https://www.epa.gov/sites/default/files/2019-02/documents/epaswmm5_1_manual_master_8-2-15.pdf)
+
+## Running SWMM
+To build, in nix develop env run
+```
+cmake -G "Unix Makefiles" -B build
+cmake --build ./build --config Release
+```
+then to call the program run
+```
+./build/bin/runswmm [input file] [output file]
+```
+
 
 ## Build Status
 [![Build and Test](../../actions/workflows/build-and-test.yml/badge.svg)](../../actions/workflows/build-and-test.yml)
